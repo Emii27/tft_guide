@@ -16,3 +16,16 @@
   --color-green-900: #0A5331;
   --color-green-950: #052E16;
 }
+
+.row {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  & > * {
+    width: 100%;
+  }
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

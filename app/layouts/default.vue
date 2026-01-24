@@ -12,62 +12,28 @@ const links = [[{
   onSelect: () => {
     open.value = false
   }
-}, {
+},
+{
   label: 'Combat',
   to: '/combat',
-  onSelect: () => {
-    open.value = false
-  }
-}, {
-  label: 'Customers',
-  icon: 'i-lucide-users',
-  to: '/customers',
-  onSelect: () => {
-    open.value = false
-  }
-}, {
-  label: 'Settings',
-  to: '/settings',
-  icon: 'i-lucide-settings',
-  defaultOpen: true,
-  type: 'trigger',
-  children: [{
-    label: 'General',
-    to: '/settings',
-    exact: true,
-    onSelect: () => {
-      open.value = false
-    }
-  }, {
-    label: 'Members',
-    to: '/settings/members',
-    onSelect: () => {
-      open.value = false
-    }
-  }, {
-    label: 'Notifications',
-    to: '/settings/notifications',
-    onSelect: () => {
-      open.value = false
-    }
-  }, {
-    label: 'Security',
-    to: '/settings/security',
-    onSelect: () => {
-      open.value = false
-    }
-  }]
-}], [{
-  label: 'Feedback',
-  icon: 'i-lucide-message-circle',
-  to: 'https://github.com/nuxt-ui-templates/dashboard',
-  target: '_blank'
-}, {
-  label: 'Help & Support',
-  icon: 'i-lucide-info',
-  to: 'https://github.com/nuxt-ui-templates/dashboard',
-  target: '_blank'
-}]] satisfies NavigationMenuItem[][]
+  defaultOpen: true
+  // type: 'trigger',
+  // children: [{
+  //   label: 'Defensive fire resolution',
+  //   to: '/combat#denfensive-fire',
+  //   exact: true,
+  //   onSelect: () => {
+  //     open.value = false
+  //   }
+  // },
+  // {
+  //   label: 'Defensive fire hit damage',
+  //   to: '/combat#hit-damage',
+  //   onSelect: () => {
+  //     open.value = false
+  //   }
+  // }]
+}]]
 
 const groups = computed(() => [{
   id: 'links',
@@ -95,11 +61,14 @@ const groups = computed(() => [{
       :ui="{ footer: 'lg:border-t lg:border-default' }"
     >
       <template #header>
-        <UHeader title="Target for Today"/>
+        Target for Today
       </template>
 
       <template #default>
-        <UDashboardSearchButton class="bg-transparent ring-default" />
+        <BomberSelect />
+
+        <DateSelect />
+        <!-- <UDashboardSearchButton class="bg-transparent ring-default" /> -->
 
         <UNavigationMenu
           :items="links[0]"

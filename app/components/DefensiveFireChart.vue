@@ -26,9 +26,9 @@ const props = defineProps<{
 const data = props.defensiveFires // Object.values(EnnemyDirection)
 const layers = [
   (d: DefensiveFire) => d.direction
-  // (d: DefensiveFire) => d.high,
-  // (d: DefensiveFire) => d.level,
-  // (d: DefensiveFire) => d.low
+  // (d: DefensiveFire.vue) => d.high,
+  // (d: DefensiveFire.vue) => d.level,
+  // (d: DefensiveFire.vue) => d.low
 ]
 const layerSettings = (index: number) => {
   return {

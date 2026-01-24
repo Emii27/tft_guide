@@ -4,7 +4,42 @@ export enum BomberType {
   B17G = 'B-17G'
 }
 
-export enum EnnemyDirection {
+export enum Months {
+  Jan = 'Jan',
+  Feb = 'Feb',
+  Mar = 'Mar',
+  Apr = 'Apr',
+  May = 'May',
+  Jun = 'Jun',
+  Jul = 'Jul',
+  Aug = 'Aug',
+  Sep = 'Sep',
+  Oct = 'Oct',
+  Nov = 'Nov',
+  Dec = 'Dec'
+}
+
+export enum Years {
+  Y1942 = '1942',
+  Y1943 = '1943',
+  Y1944 = '1944',
+  Y1945 = '1945'
+}
+
+export enum EnemyType {
+  Me109 = 'Me-109',
+  Me110 = 'Me-110',
+  Ju88C6 = 'Ju-88 C6',
+  Fw190 = 'Fw-190',
+  Me210 = 'Me-210',
+  Me410 = 'Me-410',
+  Ta152H = 'Ta-152H',
+  He162 = 'He-162',
+  Me163 = 'Me-163',
+  Me262 = 'Me-262'
+}
+
+export enum EnemyDirection {
   D1200 = '1200',
   D0130 = '0130',
   D0300 = '0300',
@@ -13,4 +48,18 @@ export enum EnnemyDirection {
   Climb = 'Climb',
   D0900 = '0900',
   D1030 = '1030'
+}
+
+export enum EnemyAltitude {
+  Low = 'Low',
+  Level = 'Level',
+  High = 'High'
+}
+
+export enum EnemyExperience {
+  Experte = 'Experte',
+  Ace = 'Ace',
+  Veteran = 'Veteran',
+  Flieger = 'Flieger',
+  Novice = 'Novice'
 }

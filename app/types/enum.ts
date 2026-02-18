@@ -63,3 +63,13 @@ export enum EnemyExperience {
   Flieger = 'Flieger',
   Novice = 'Novice'
 }
+
+export enum WoundArea {
+  Abdomen = 'Abdomen',
+  Face = 'Face',
+  Head = 'Head',
+  LowerExtremities = 'Lower extremities',
+  Neck = 'Neck',
+  Thorax = 'Thorax',
+  UpperExtremities = 'Upper extremities'
+}

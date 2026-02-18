@@ -1,39 +1,57 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
-
 const route = useRoute()
 
 const open = ref(false)
 
-const links = [[{
-  label: 'Home',
-  icon: 'i-lucide-house',
-  to: '/',
-  onSelect: () => {
-    open.value = false
+const links = [
+  {
+    label: 'Home',
+    icon: 'i-lucide-house',
+    to: '/',
+    onSelect: () => {
+      open.value = false
+    }
+  },
+  {
+    label: 'Combat',
+    icon: 'i-lucide-crosshair',
+    to: '/combat',
+    defaultOpen: true
+  },
+  {
+    label: 'Wounds',
+    icon: 'i-lucide-cross',
+    to: '/wounds'
+    // defaultOpen: true,
+    // type: 'trigger',
+    // children: [
+    //   {
+    //     label: 'Wound type',
+    //     to: '/wounds/#wounds',
+    //     onSelect: async () => {
+    //       open.value = false
+    //       await navigateTo('/wounds/#wounds')
+    //     }
+    //   },
+    //   {
+    //     label: 'Light wound',
+    //     to: '/wounds/#light-wound',
+    //     onSelect: async () => {
+    //       open.value = false
+    //       await navigateTo('/wounds/#light-wound')
+    //     }
+    //   },
+    //   {
+    //     label: 'Serious wound',
+    //     to: '/wounds/#serious-wound',
+    //     onSelect: () => {
+    //       open.value = false
+    //       navigateTo('/wounds/#serious-wound')
+    //     }
+    //   }
+    // ]
   }
-},
-{
-  label: 'Combat',
-  to: '/combat',
-  defaultOpen: true
-  // type: 'trigger',
-  // children: [{
-  //   label: 'Defensive fire resolution',
-  //   to: '/combat#denfensive-fire',
-  //   exact: true,
-  //   onSelect: () => {
-  //     open.value = false
-  //   }
-  // },
-  // {
-  //   label: 'Defensive fire hit damage',
-  //   to: '/combat#hit-damage',
-  //   onSelect: () => {
-  //     open.value = false
-  //   }
-  // }]
-}]]
+]
 
 const groups = computed(() => [{
   id: 'links',
@@ -71,7 +89,7 @@ const groups = computed(() => [{
         <!-- <UDashboardSearchButton class="bg-transparent ring-default" /> -->
 
         <UNavigationMenu
-          :items="links[0]"
+          :items="links"
           orientation="vertical"
           tooltip
           popover

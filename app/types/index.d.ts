@@ -1,4 +1,4 @@
-import type { EnemyAltitude, type EnemyType, type EnemyDirection } from '~/types/enum'
+import type { WoundArea, type EnemyAltitude, type EnemyType, type EnemyDirection } from '~/types/enum'
 
 export interface DefensiveFire {
   direction: EnemyDirection
@@ -34,4 +34,22 @@ export interface SuccessiveAttackResult {
   roll: string
   position: EnemyDirection
   altitude: EnemyAltitude
+}
+
+export interface Wounds {
+  roll: string
+  effect: string
+}
+
+export interface WoundLocation {
+  roll: string
+  area: WoundArea
+  effect: string
+}
+
+export interface WoundSurgery {
+  type: string
+  time: string
+  firstRoll: string
+  secondRoll: string
 }

@@ -25,9 +25,3 @@ import SuccessiveAttacks from '~/components/combat/SuccessiveAttacks.vue'
     </template>
   </UDashboardPanel>
 </template>
-
-<style scoped>
-.body-card > *:not(:last-child) {
-  margin-bottom: 2rem;
-}
-</style>

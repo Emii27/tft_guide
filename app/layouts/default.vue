@@ -15,41 +15,41 @@ const links = [
   {
     label: 'Combat',
     icon: 'i-lucide-crosshair',
-    to: '/combat',
-    defaultOpen: true
+    defaultOpen: false,
+    type: 'trigger',
+    children: [
+      {
+        label: 'Resistance',
+        to: '/resistance'
+      },
+      {
+        label: 'Combat',
+        to: '/combat'
+      }
+    ]
   },
   {
-    label: 'Wounds',
-    icon: 'i-lucide-cross',
-    to: '/wounds'
-    // defaultOpen: true,
-    // type: 'trigger',
-    // children: [
-    //   {
-    //     label: 'Wound type',
-    //     to: '/wounds/#wounds',
-    //     onSelect: async () => {
-    //       open.value = false
-    //       await navigateTo('/wounds/#wounds')
-    //     }
-    //   },
-    //   {
-    //     label: 'Light wound',
-    //     to: '/wounds/#light-wound',
-    //     onSelect: async () => {
-    //       open.value = false
-    //       await navigateTo('/wounds/#light-wound')
-    //     }
-    //   },
-    //   {
-    //     label: 'Serious wound',
-    //     to: '/wounds/#serious-wound',
-    //     onSelect: () => {
-    //       open.value = false
-    //       navigateTo('/wounds/#serious-wound')
-    //     }
-    //   }
-    // ]
+    label: 'Crew',
+    icon: 'i-lucide-users',
+    defaultOpen: false,
+    type: 'trigger',
+    children: [
+      {
+        label: 'Wounds',
+        icon: 'i-lucide-cross',
+        to: 'crew/wounds'
+      },
+      {
+        label: 'Frostbite',
+        icon: 'i-lucide-snowflake',
+        to: 'crew/frostbite'
+      },
+      {
+        label: 'Bailout',
+        icon: 'i-lucide-parachute',
+        to: '/crew/bailout'
+      }
+    ]
   }
 ]
 

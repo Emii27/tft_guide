@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Wounds from '~/components/wounds/Wounds.vue'
-import LightWoundDetail from '~/components/wounds/LightWoundDetail.vue'
-import SeriousWoundDetail from '~/components/wounds/SeriousWoundDetail.vue'
+import Wounds from '~/components/crew/wounds/Wounds.vue'
+import LightWoundDetail from '~/components/crew/wounds/LightWoundDetail.vue'
+import SeriousWoundDetail from '~/components/crew/wounds/SeriousWoundDetail.vue'
 </script>
 
 <template>

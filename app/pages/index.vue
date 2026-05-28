@@ -39,8 +39,6 @@
             <li class="strikethrough">
               Wounds
             </li>
-            <li>Light wound</li>
-            <li>Serious wound</li>
             <li>KIA</li>
             <li>Frostbite</li>
           </ul>

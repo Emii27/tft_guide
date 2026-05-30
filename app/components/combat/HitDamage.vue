@@ -33,7 +33,7 @@ const fboaEffect = computed(() => {
 <template>
   <UCard class="p-0">
     <template #header>
-      (5-7) Hit damage against german fighter {{ enemyType }}
+      (5-7) Hit damage against german fighter {{ enemyType }} ; <i>2D6</i>
     </template>
     <div class="row">
       <div>

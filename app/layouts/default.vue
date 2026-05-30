@@ -23,9 +23,13 @@ const links = [
         to: '/resistance'
       },
       {
-        label: 'Combat',
-        to: '/combat'
-      }
+        label: 'Defensive Fire',
+        to: '/combat/defensive-fire'
+      },
+      {
+        label: 'Ennemy Fire',
+        to: '/combat/ennemy-fire'
+      },
     ]
   },
   {
@@ -37,12 +41,12 @@ const links = [
       {
         label: 'Wounds',
         icon: 'i-lucide-cross',
-        to: 'crew/wounds'
+        to: '/crew/wounds'
       },
       {
         label: 'Frostbite',
         icon: 'i-lucide-snowflake',
-        to: 'crew/frostbite'
+        to: '/crew/frostbite'
       },
       {
         label: 'Bailout',

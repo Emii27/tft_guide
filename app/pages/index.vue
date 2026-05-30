@@ -34,7 +34,7 @@
             <li class="strikethrough">
               Combat charts (5-6 to 5-11)
             </li>
-            <li>Reorganize combat into 2 pages: defensive and offensive fire</li>
+            <li class="strikethrough">Reorganize combat into 2 pages: defensive and offensive fire</li>
             <li>Remaining of the combat charts (starting 5-5)</li>
             <li class="strikethrough">
               Wounds

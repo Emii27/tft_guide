@@ -1,4 +1,17 @@
-import type { WoundArea, type EnemyAltitude, type EnemyType, type EnemyDirection } from '~/types/enum'
+import type { WoundArea, type EnemyAltitude, type EnemyType, type EnemyDirection, EnemyExperience } from '~/types/enum'
+
+export interface EnemyExperienceAttributionTable {
+  periodStart: Date
+  periodEnd: Date
+  results: EnemyExperienceAttribution[]
+}
+
+export interface EnemyExperienceAttribution {
+  enemyExperience: EnemyExperience
+  roll: string
+  max: string
+  extra: string
+}
 
 export interface DefensiveFire {
   direction: EnemyDirection

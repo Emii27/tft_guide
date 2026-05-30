@@ -1,20 +1,18 @@
 <script setup lang="ts">
-import DefensiveFire from '~/components/combat/DefensiveFire.vue'
-import CombatInfo from '~/components/combat/CombatInfo.vue'
-import HitDamage from '~/components/combat/HitDamage.vue'
+import EnemyExperience from '~/components/combat/EnemyExperience.vue'
 </script>
 
 <template>
   <UDashboardPanel>
     <template #header>
-      <UDashboardNavbar title="Defensive Fire">
+      <UDashboardNavbar title="Enemy Experience">
         <template #trailing>
           <UButton
             class="ml-4"
             size="lg"
           >
-            <NuxtLink to="/combat/enemy-fire">
-              Go to Ennemy Fire
+            <NuxtLink to="/combat/defensive-fire">
+              Go to Defensive Fire
             </NuxtLink>
           </UButton>
         </template>
@@ -25,8 +23,7 @@ import HitDamage from '~/components/combat/HitDamage.vue'
 
     <template #body>
       <div class="body-card">
-        <DefensiveFire id="defensive-fire" />
-        <HitDamage id="hit-damage" />
+        <EnemyExperience />
       </div>
     </template>
   </UDashboardPanel>

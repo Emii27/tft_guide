@@ -51,12 +51,12 @@ function onContextMenu() {}
     </p>
     <p>Crewmember receiving first aid is moved to the radio room.</p>
     <p>Wounded crewmembers must receive first aid continuously for the remainder of the mission to gain the effect of first aid.</p>
-    <p class="pt-4">
+    <div class="pt-4">
       Effect of First Aid:
       <ul class="pl-4">
         <li><b>-1</b> on 5-17B Recovery table for serious wound.</li>
         <li><b>+1</b> on 5-18A Recovery table for frostbite.</li>
       </ul>
-    </p>
+    </div>
   </UCard>
 </template>

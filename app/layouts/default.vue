@@ -23,13 +23,17 @@ const links = [
         to: '/resistance'
       },
       {
+        label: 'Enemy Experience',
+        to: '/combat/enemy-experience'
+      },
+      {
         label: 'Defensive Fire',
         to: '/combat/defensive-fire'
       },
       {
-        label: 'Ennemy Fire',
-        to: '/combat/ennemy-fire'
-      },
+        label: 'Enemy Fire',
+        to: '/combat/enemy-fire'
+      }
     ]
   },
   {

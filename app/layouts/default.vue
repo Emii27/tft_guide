@@ -37,6 +37,11 @@ const links = [
     ]
   },
   {
+    label: 'Flak',
+    icon: 'i-lucide-badge-x',
+    to: '/flak'
+  },
+  {
     label: 'Crew',
     icon: 'i-lucide-users',
     defaultOpen: false,

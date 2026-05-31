@@ -4,7 +4,6 @@ import { EnemyExperience } from '~/types/enum'
 const enemyExperience = useState('enemyExperience')
 
 const { data } = await useFetch('/api/successive-attack-result')
-const dataFiltered = computed(() => data.value)
 function onContextMenu() {}
 
 const eligibilityModifier = computed(() => {
@@ -28,7 +27,7 @@ const eligibilityModifier = computed(() => {
       (5-9) Successive attacks new position ; <i>1D6 + 1D6</i>
     </template>
     <UTable
-      :data="dataFiltered"
+      :data="data"
       @contextmenu="onContextMenu"
     />
     <div class="px-4 py-3 border-t border-accented">

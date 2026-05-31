@@ -49,6 +49,41 @@ export interface SuccessiveAttackResult {
   altitude: EnemyAltitude
 }
 
+export interface FlakStrengthResult {
+  roll: string
+  effect: FlakStrength
+}
+
+export interface FlakTypeResult {
+  roll: string
+  effect: FlakType
+}
+
+export interface FlakAccuracyResult {
+  roll: string
+  effect: string
+}
+
+export interface FlakHit {
+  strength: FlakStrength
+  results: FlakHitByStrength[]
+}
+
+export interface FlakHitByStrength {
+  roll: string
+  effect: bool
+}
+
+export interface FlakShellHit {
+  roll: string
+  effect: string
+}
+
+export interface FlakAreaHit {
+  roll: string
+  effect: string
+}
+
 export interface Wounds {
   roll: string
   effect: string

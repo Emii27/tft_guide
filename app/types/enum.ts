@@ -96,6 +96,12 @@ export enum EnemyExperience {
   Novice = 'Novice'
 }
 
+export enum WoundType {
+  LightWound = 'Light Wound',
+  SeriousWound = 'Serious Wound',
+  Killed = 'KIA'
+}
+
 export enum WoundArea {
   Abdomen = 'Abdomen',
   Face = 'Face',

@@ -1,39 +1,70 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
-
 const route = useRoute()
 
 const open = ref(false)
 
-const links = [[{
-  label: 'Home',
-  icon: 'i-lucide-house',
-  to: '/',
-  onSelect: () => {
-    open.value = false
+const links = [
+  {
+    label: 'Home',
+    icon: 'i-lucide-house',
+    to: '/',
+    onSelect: () => {
+      open.value = false
+    }
+  },
+  {
+    label: 'Combat',
+    icon: 'i-lucide-crosshair',
+    defaultOpen: false,
+    type: 'trigger',
+    children: [
+      {
+        label: 'Resistance',
+        to: '/resistance'
+      },
+      {
+        label: 'Enemy Experience',
+        to: '/combat/enemy-experience'
+      },
+      {
+        label: 'Defensive Fire',
+        to: '/combat/defensive-fire'
+      },
+      {
+        label: 'Enemy Fire',
+        to: '/combat/enemy-fire'
+      }
+    ]
+  },
+  {
+    label: 'Flak',
+    icon: 'i-lucide-badge-x',
+    to: '/flak'
+  },
+  {
+    label: 'Crew',
+    icon: 'i-lucide-users',
+    defaultOpen: false,
+    type: 'trigger',
+    children: [
+      {
+        label: 'Wounds',
+        icon: 'i-lucide-cross',
+        to: '/crew/wounds'
+      },
+      {
+        label: 'Frostbite',
+        icon: 'i-lucide-snowflake',
+        to: '/crew/frostbite'
+      },
+      {
+        label: 'Bailout',
+        icon: 'i-lucide-parachute',
+        to: '/crew/bailout'
+      }
+    ]
   }
-},
-{
-  label: 'Combat',
-  to: '/combat',
-  defaultOpen: true
-  // type: 'trigger',
-  // children: [{
-  //   label: 'Defensive fire resolution',
-  //   to: '/combat#denfensive-fire',
-  //   exact: true,
-  //   onSelect: () => {
-  //     open.value = false
-  //   }
-  // },
-  // {
-  //   label: 'Defensive fire hit damage',
-  //   to: '/combat#hit-damage',
-  //   onSelect: () => {
-  //     open.value = false
-  //   }
-  // }]
-}]]
+]
 
 const groups = computed(() => [{
   id: 'links',
@@ -71,7 +102,7 @@ const groups = computed(() => [{
         <!-- <UDashboardSearchButton class="bg-transparent ring-default" /> -->
 
         <UNavigationMenu
-          :items="links[0]"
+          :items="links"
           orientation="vertical"
           tooltip
           popover

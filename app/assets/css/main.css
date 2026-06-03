@@ -17,6 +17,10 @@
   --color-green-950: #052E16;
 }
 
+ol {
+  list-style: lower-alpha;
+}
+
 .row {
   margin-top: 0.5rem;
   display: flex;
@@ -28,4 +32,8 @@
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+.body-card > *:not(:last-child) {
+  margin-bottom: 2rem;
 }

@@ -26,6 +26,38 @@ export enum Years {
   Y1945 = '1945'
 }
 
+export enum Weather {
+  FullCloud = '100% Cloud Cover',
+  HalfCloud = '50% Cloud Cover',
+  Haze = 'Haze',
+  Clear = 'Clear'
+}
+
+export enum TargetVisibility {
+  CompletelyObscured = 'Completely Obscured',
+  MostlyObscured = 'Mostly obscured',
+  Clear = 'Clear'
+}
+
+export enum FlakStrength {
+  NoFlak = 'No Flak',
+  LightFlak = 'Light Flak',
+  ModerateFlak = 'Moderate Flak',
+  HeavyFlak = 'Heavy Flak'
+}
+
+export enum FlakType {
+  Barrage = 'Barrage',
+  PredictedConcentration = 'Predicted Concentration',
+  ContinuePointFire = 'Continuously Pointing Fire'
+}
+
+export enum FlakAccuracy {
+  Inaccurate = 'Inaccurate',
+  Accurate = 'Accurate',
+  VeryAccurate = 'Very Accurate'
+}
+
 export enum EnemyType {
   Me109 = 'Me-109',
   Me110 = 'Me-110',
@@ -62,4 +94,20 @@ export enum EnemyExperience {
   Veteran = 'Veteran',
   Flieger = 'Flieger',
   Novice = 'Novice'
+}
+
+export enum WoundType {
+  LightWound = 'Light Wound',
+  SeriousWound = 'Serious Wound',
+  Killed = 'KIA'
+}
+
+export enum WoundArea {
+  Abdomen = 'Abdomen',
+  Face = 'Face',
+  Head = 'Head',
+  LowerExtremities = 'Lower extremities',
+  Neck = 'Neck',
+  Thorax = 'Thorax',
+  UpperExtremities = 'Upper extremities'
 }

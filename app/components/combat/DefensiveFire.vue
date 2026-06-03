@@ -20,7 +20,7 @@ const data = ref([
     effect: 'Miss'
   },
   {
-    roll: '8-12+ (b)',
+    roll: '8+',
     effect: 'Hit'
   }
 ])

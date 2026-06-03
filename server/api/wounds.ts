@@ -1,17 +1,18 @@
 import type { Wounds } from '~/types'
+import { WoundType } from '~/types/enum'
 
 const wounds: Wounds[] = [
   {
     roll: '1-3',
-    effect: 'Light wound (a, b)'
+    effect: WoundType.LightWound + '(a, b)'
   },
   {
     roll: '4-5',
-    effect: 'Serious wound (c, d)'
+    effect: WoundType.SeriousWound + '(c, d)'
   },
   {
     roll: '6',
-    effect: 'KIA'
+    effect: WoundType.Killed
   }
 ]
 

@@ -35,7 +35,7 @@
             <li class="strikethrough">
               Reorganize combat into 2 pages: defensive and offensive fire
             </li>
-            <li>Combat: Missing 5-5 (Defensive fire allocation) + 5-6A (Spray Fire)</li>
+            <li><span class="strikethrough">Combat: Missing 5-5 (Defensive fire allocation)</span> + 5-6A (Spray Fire)</li>
             <li class="strikethrough">
               Wounds
             </li>

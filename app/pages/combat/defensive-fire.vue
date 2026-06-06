@@ -2,6 +2,8 @@
 import DefensiveFire from '~/components/combat/DefensiveFire.vue'
 import CombatInfo from '~/components/combat/CombatInfo.vue'
 import HitDamage from '~/components/combat/HitDamage.vue'
+import EnemyExperience from '~/components/combat/EnemyExperience.vue'
+import DefensiveFireAllocation from '~/components/combat/DefensiveFireAllocation.vue'
 </script>
 
 <template>
@@ -25,6 +27,8 @@ import HitDamage from '~/components/combat/HitDamage.vue'
 
     <template #body>
       <div class="body-card">
+        <DefensiveFireAllocation />
+        <EnemyExperience />
         <DefensiveFire id="defensive-fire" />
         <HitDamage id="hit-damage" />
       </div>

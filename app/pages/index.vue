@@ -29,19 +29,27 @@
             Roadmap
           </template>
           <ul class="px-4">
+            <li>Pre-mission tables (2-9 to 3-3)</li>
+            <li>In zone tables (4-1 to 4-8)</li>
+            <li>Resistance and Waves (5-1 to 5-4)</li>
             <li class="strikethrough">
               Combat charts (5-6 to 5-11)
             </li>
+            <li>Damages tables (5-12 to 5-15)</li>
             <li class="strikethrough">
-              Wounds + KIA
-            </li>
-            <li>Frostbite</li>
-            <li class="strikethrough">
-              Flak
+              Wounds (5-17)
             </li>
             <li class="strikethrough">
-              Enemy experience
+              Frostbite (5-18)
             </li>
+            <li>Oxygen Fire (5-19)</li>
+            <li>Target Visibility (6-1)</li>
+            <li class="strikethrough">
+              Flak (6-2 to 6-5)
+            </li>
+            <li>Bomb run (6-6 to 6-7)</li>
+            <li>Landing (7-1 to 7-2)</li>
+            <li>Bailout (7-3 to 7-4)</li>
           </ul>
         </UCard>
       </div>

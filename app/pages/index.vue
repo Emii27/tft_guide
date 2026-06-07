@@ -32,7 +32,6 @@
             <li class="strikethrough">
               Combat charts (5-6 to 5-11)
             </li>
-            <li>Combat: Missing  5-6A (Spray Fire)</li>
             <li class="strikethrough">
               Wounds + KIA
             </li>

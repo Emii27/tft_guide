@@ -4,7 +4,7 @@ import { EnemyExperience, EnemyType } from '~/types/enum'
 const enemyType = useState('enemyType')
 const enemyExperience = useState('enemyExperience')
 
-const { data } = await useFetch('/api/defensive-fire-hit')
+const { data } = await useFetch('/api/combat/defensive-fire-hit')
 const dataFiltered = computed(() => {
   const result = data.value?.filter(val => val.enemyType === enemyType.value)[0]
   return result?.results

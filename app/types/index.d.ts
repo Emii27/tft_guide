@@ -21,6 +21,11 @@ export interface DefensiveFire {
   high: string
 }
 
+export interface SprayFire {
+  roll: string
+  effect: string
+}
+
 export interface DefensiveFireHit {
   enemyType: EnemyType
   results: T[]

@@ -8,13 +8,13 @@ const enemyType = useState('enemyType')
 const enemyExperience = useState('enemyExperience')
 
 // Data for (5-10) Shell hits
-const { data: shellHitData } = await useFetch('/api/offensive-fire-shell', {
+const { data: shellHitData } = await useFetch('/api/combat/offensive-fire-shell', {
   query: { direction: enemyDirection }
 })
 const shellHitDataFiltered = computed(() => shellHitData.value?.results)
 
 // Data for (5-11) Shell hit multiplier
-const { data: multiplierData } = await useFetch('/api/offensive-fire-multiplier', {
+const { data: multiplierData } = await useFetch('/api/combat/offensive-fire-multiplier', {
   query: { enemyType, month, year }
 })
 const multiplierDataFiltered = computed(() => multiplierData.value?.results)

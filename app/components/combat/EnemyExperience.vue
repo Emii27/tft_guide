@@ -2,7 +2,7 @@
 const month = useState('currentMonth')
 const year = useState('currentYear')
 
-const { data } = await useFetch('/api/enemy-experience', {
+const { data } = await useFetch('/api/combat/enemy-experience', {
   query: { month, year }
 })
 const dataFiltered = computed(() => data.value?.results)

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data } = await useFetch('/api/controlled-bailout')
+const { data } = await useFetch('/api/combat/controlled-bailout')
 function onContextMenu() {}
 </script>
 

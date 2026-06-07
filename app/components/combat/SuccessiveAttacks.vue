@@ -3,7 +3,7 @@ import { EnemyExperience } from '~/types/enum'
 
 const enemyExperience = useState('enemyExperience')
 
-const { data } = await useFetch('/api/successive-attack-result')
+const { data } = await useFetch('/api/combat/successive-attack-result')
 function onContextMenu() {}
 
 const eligibilityModifier = computed(() => {

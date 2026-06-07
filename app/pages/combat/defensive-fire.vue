@@ -4,6 +4,7 @@ import CombatInfo from '~/components/combat/CombatInfo.vue'
 import HitDamage from '~/components/combat/HitDamage.vue'
 import EnemyExperience from '~/components/combat/EnemyExperience.vue'
 import DefensiveFireAllocation from '~/components/combat/DefensiveFireAllocation.vue'
+import SprayFire from '~/components/combat/SprayFire.vue'
 </script>
 
 <template>
@@ -30,6 +31,7 @@ import DefensiveFireAllocation from '~/components/combat/DefensiveFireAllocation
         <DefensiveFireAllocation />
         <EnemyExperience />
         <DefensiveFire id="defensive-fire" />
+        <SprayFire />
         <HitDamage id="hit-damage" />
       </div>
     </template>

@@ -4,7 +4,7 @@ import { EnemyExperience } from '~/types/enum'
 const enemyDirection = useState('enemyDirection')
 const enemyExperience = useState('enemyExperience')
 
-const { data } = await useFetch('/api/offensive-fire-hit', {
+const { data } = await useFetch('/api/combat/offensive-fire-hit', {
   query: { direction: enemyDirection }
 })
 const dataFiltered = computed(() => data.value?.results)

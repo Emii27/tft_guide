@@ -5,7 +5,7 @@ const woundTypes = Object.values(WoundType)
 
 const wound = useState('wound', () => WoundType.LightWound)
 
-const { data } = await useFetch('/api/wounds')
+const { data } = await useFetch('/api/wound/wounds')
 function onContextMenu() {}
 </script>
 

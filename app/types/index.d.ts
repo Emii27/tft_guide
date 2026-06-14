@@ -1,4 +1,12 @@
-import type { WoundArea, type EnemyAltitude, type EnemyType, type EnemyDirection, EnemyExperience } from '~/types/enum'
+import type {
+  FrostbiteArea,
+  type WoundArea,
+  type EnemyAltitude,
+  type EnemyType,
+  type EnemyDirection,
+  type EnemyExperience
+
+} from '~/types/enum'
 
 export interface EnemyExperienceAttributionTable {
   periodStart: Date
@@ -19,6 +27,11 @@ export interface DefensiveFire {
   low: string
   level: string
   high: string
+}
+
+export interface SprayFire {
+  roll: string
+  effect: string
 }
 
 export interface DefensiveFireHit {
@@ -100,4 +113,23 @@ export interface WoundSurgery {
   time: string
   firstRoll: string
   secondRoll: string
+}
+
+export interface Frostbite {
+  roll: string
+  effect: string
+}
+
+export interface FrostbiteLocation {
+  roll: string
+  area: FrostbiteArea
+  effect: string
+}
+
+export interface FrostbiteRecovery {
+  roll: string
+  nipExtremities: string
+  nipOther: string
+  biteExtremities: string
+  biteOther: string
 }

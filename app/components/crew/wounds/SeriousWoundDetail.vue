@@ -7,8 +7,8 @@ const items = [
   'Severed Hand/Foot'
 ]
 const selectedWound = ref(items[0])
-const { data: data } = await useFetch('/api/serious-wound-location')
-const { data: dataSurgery } = await useFetch('/api/serious-wound-surgery', {
+const { data: data } = await useFetch('/api/wound/serious-wound-location')
+const { data: dataSurgery } = await useFetch('/api/wound/serious-wound-surgery', {
   query: { type: selectedWound }
 })
 const columns = [

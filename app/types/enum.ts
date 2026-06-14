@@ -111,3 +111,16 @@ export enum WoundArea {
   Thorax = 'Thorax',
   UpperExtremities = 'Upper extremities'
 }
+
+export enum FrostbiteArea {
+  Face = 'Face',
+  Ears = 'Ears',
+  Forearm = 'Forearm',
+  Wrist = 'Wrist',
+  Hand = 'Hand',
+  Fingertips = 'Fingertips',
+  LowerLeg = 'LowerLeg',
+  Ankle = 'Ankle',
+  Foot = 'Foot',
+  Toes = 'Toes'
+}

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: data } = await useFetch('/api/light-wound-location')
+const { data: data } = await useFetch('/api/wound/light-wound-location')
 const columns = [
   {
     accessorKey: 'roll',

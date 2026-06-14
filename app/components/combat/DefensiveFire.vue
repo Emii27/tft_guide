@@ -132,6 +132,7 @@ const experienceModifier = computed(() => {
           <li><b>-1</b> if Intercom System for Tail Guns</li>
           <li><b>-1</b> if bomber performing Evasive Maneuvers</li>
           <li><b>-1</b> if gunner suffering frostbite</li>
+          <li><b>-1</b> if for Tail guns "Passing Shot" against 1030, 1200 or 0130 position</li>
         </ul>
       </div>
     </UCard>

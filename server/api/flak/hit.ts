@@ -60,6 +60,10 @@ const flakHit: FlakHit[] = [
         effect: true
       },
       {
+        roll: '6',
+        effect: false
+      },
+      {
         roll: '7',
         effect: true
       },

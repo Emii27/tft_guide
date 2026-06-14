@@ -8,6 +8,19 @@ import type {
 
 } from '~/types/enum'
 
+export interface FormationType {
+  name: string
+  startDate: Date
+  endDate: Date
+  positions: FormationPosition[]
+}
+
+export interface FormationPosition {
+  roll: string
+  position: string
+  effect: string
+}
+
 export interface EnemyExperienceAttributionTable {
   periodStart: Date
   periodEnd: Date

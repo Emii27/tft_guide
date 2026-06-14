@@ -9,7 +9,6 @@ const links = [
   },
   {
     label: 'Setup',
-    // icon: 'i-game-icons-crosshair',
     defaultOpen: false,
     type: 'trigger',
     children: [
@@ -25,7 +24,23 @@ const links = [
       }
     ]
   },
-
+  {
+    label: 'Briefing',
+    defaultOpen: false,
+    type: 'trigger',
+    children: [
+      {
+        label: 'Target',
+        icon: 'i-game-icons-target-laser',
+        to: '/briefing/target'
+      },
+      {
+        label: 'Formation',
+        icon: 'i-lucide-group',
+        to: '/briefing/formation'
+      }
+    ]
+  },
   {
     label: 'Combat',
     icon: 'i-game-icons-crosshair',
@@ -72,7 +87,7 @@ const links = [
   },
   {
     label: 'Flak',
-    icon: 'i-game-icons-anti-setup-gun',
+    icon: 'i-game-icons-anti-aircraft-gun',
     to: '/flak'
   }
 ]
@@ -123,7 +138,5 @@ const groups = computed(() => [{
     <UDashboardSearch :groups="groups" />
 
     <slot />
-
-    <NotificationsSlideover />
   </UDashboardGroup>
 </template>

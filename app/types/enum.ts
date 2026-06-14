@@ -33,6 +33,13 @@ export enum Weather {
   Clear = 'Clear'
 }
 
+// export enum FighterCoverType {
+//   Good = 'Good',
+//   Fair = 'Fair',
+//   Poor = 'Poor',
+//   None = 'None'
+// }
+
 export enum TargetVisibility {
   CompletelyObscured = 'Completely Obscured',
   MostlyObscured = 'Mostly obscured',

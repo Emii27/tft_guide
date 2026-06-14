@@ -21,6 +21,37 @@ export interface FormationPosition {
   effect: string
 }
 
+export interface FirstMechanicalFailure {
+  periodStart: Date
+  periodEnd: Date
+  results: FirstMechanicalFailureResult[]
+}
+
+export interface FirstMechanicalFailureResult {
+  effect: string
+  roll: string
+}
+
+export interface FriendlyAirspace {
+  periodStart: Date
+  periodEnd: Date
+  outboundFlight: string
+  inboundFlight: string
+}
+
+export interface FighterCover {
+  periodStart: Date
+  periodEnd: Date
+  results: FighterCoverResult[]
+}
+export interface FighterCoverResult {
+  zone: string
+  good: string
+  fair: string
+  poor: string
+  none: string
+}
+
 export interface EnemyExperienceAttributionTable {
   periodStart: Date
   periodEnd: Date

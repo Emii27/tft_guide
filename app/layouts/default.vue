@@ -42,6 +42,50 @@ const links = [
     ]
   },
   {
+    label: 'Mission start',
+    defaultOpen: false,
+    type: 'trigger',
+    children: [
+      {
+        label: 'Takeoff',
+        icon: 'i-lucide-plane-takeoff',
+        to: '/start/mission-takeoff'
+      },
+      {
+        label: 'Form-up',
+        icon: 'i-game-icons-join',
+        to: '/start/form-up'
+      }
+    ]
+  },
+  {
+    label: 'In Zone',
+    defaultOpen: false,
+    type: 'trigger',
+    children: [
+      {
+        label: 'Weather',
+        icon: 'i-lucide-cloud-sun',
+        to: '/zone/weather'
+      },
+      {
+        label: 'Recall',
+        icon: 'i-lucide-refresh-ccw',
+        to: '/zone/recall'
+      },
+      {
+        label: 'In zone actions',
+        icon: 'i-lucide-list-checks',
+        to: '/zone/action'
+      },
+      {
+        label: 'Fighter cover',
+        icon: 'i-game-icons-gunshot',
+        to: '/zone/cover'
+      }
+    ]
+  },
+  {
     label: 'Combat',
     icon: 'i-game-icons-crosshair',
     defaultOpen: false,

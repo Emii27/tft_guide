@@ -1,20 +1,34 @@
 <script setup lang="ts">
 const route = useRoute()
 
-const open = ref(false)
-
 const links = [
   {
     label: 'Home',
     icon: 'i-lucide-house',
-    to: '/',
-    onSelect: () => {
-      open.value = false
-    }
+    to: '/'
   },
   {
+    label: 'Setup',
+    // icon: 'i-game-icons-crosshair',
+    defaultOpen: false,
+    type: 'trigger',
+    children: [
+      {
+        label: 'Basic Infos',
+        icon: 'i-lucide-info',
+        to: '/setup/infos'
+      },
+      {
+        label: 'Aircraft',
+        icon: 'i-game-icons-commercial-airplane',
+        to: '/setup/aircraft'
+      }
+    ]
+  },
+
+  {
     label: 'Combat',
-    icon: 'i-lucide-crosshair',
+    icon: 'i-game-icons-crosshair',
     defaultOpen: false,
     type: 'trigger',
     children: [
@@ -51,14 +65,14 @@ const links = [
       },
       {
         label: 'Bailout',
-        icon: 'i-lucide-parachute',
+        icon: 'i-game-icons-parachute',
         to: '/crew/bailout'
       }
     ]
   },
   {
     label: 'Flak',
-    icon: 'i-lucide-badge-x',
+    icon: 'i-game-icons-anti-setup-gun',
     to: '/flak'
   }
 ]
@@ -96,7 +110,6 @@ const groups = computed(() => [{
         <BomberSelect />
 
         <DateSelect />
-        <!-- <UDashboardSearchButton class="bg-transparent ring-default" /> -->
 
         <UNavigationMenu
           :items="links"

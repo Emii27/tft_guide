@@ -1,4 +1,19 @@
 <script setup lang="ts">
+import type { TableCardHeader } from '~/types/table-card'
+import TableCard from '~/components/utils/TableCard.vue'
+
+const month = useState('currentMonth')
+const year = useState('currentYear')
+
+const isAboveTreshold = computed(() => {
+  const currentDate = new Date(`${month} ${year}`)
+  const treshold = new Date('Apr 1944')
+  return currentDate >= treshold
+})
+
+const title: TableCardHeader = {
+  name: 'Scrubbed Mission'
+}
 const data = [
   {
     roll: '<14',
@@ -27,33 +42,44 @@ const columns = [
     header: 'Effect'
   }
 ]
-function onContextMenu() {}
 </script>
 
 <template>
-  <UCard class="p-0">
-    <template #header>
-      Scrubbed Mission
+  <TableCard
+    :title="title"
+    :data="data"
+    :columns="columns"
+  >
+    <template #tableLeftAside>
+      <UCard
+        variant="soft"
+        class="mb-4"
+      >
+        <template #header>
+          Is the mission scrubbed? ; <i>1D10</i>
+        </template>
+
+        {{ month }} {{ year }}:
+
+        <ul
+          v-if="isAboveTreshold"
+          class="mt-2"
+        >
+          <li><8 = Mission executed</li>
+          <li>9+ = Mission scrubbed</li>
+        </ul>
+        <ul
+          v-else
+          class="mt-2"
+        >
+          <li><7 = Mission executed</li>
+          <li>8+ = Mission scrubbed</li>
+        </ul>
+
+        <template #footer>
+          If the mission is scrubbed, roll on the following table:
+        </template>
+      </UCard>
     </template>
-    <UCard
-      variant="soft"
-      class="mb-4"
-    >
-      <template #header>
-        Is the mission scrubbed? ; <i>1D10</i>
-      </template>
-      <ul>
-        <li>Aug 1942 - Mar 1944: <7 = Mission executed ; 8+ = Mission scrubbed</li>
-        <li>Apr 1942 - Apr 1945: <8 = Mission executed ; 9+ = Mission scrubbed</li>
-      </ul>
-      <p class="mt-4">
-        If the mission is scrubbed, roll on the table below.
-      </p>
-    </UCard>
-    <UTable
-      :data="data"
-      :columns="columns"
-      @contextmenu="onContextMenu"
-    />
-  </UCard>
+  </TableCard>
 </template>

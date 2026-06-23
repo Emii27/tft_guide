@@ -1,29 +1,23 @@
 <script setup lang="ts">
+import Card from '~/components/utils/Card.vue'
+import Page from '~/components/utils/Page.vue'
 </script>
 
 <template>
-  <UDashboardPanel>
-    <template #header>
-      <UDashboardNavbar title="Formation" />
-    </template>
-
-    <template #body>
-      <div class="body-card">
-        <UCard class="p-0">
-          Bomber position:
-          <UButton
-            class="ml-4"
-            size="lg"
-          >
-            <a
-              href="/bomber-position.pdf"
-              target="_blank"
-            >
-              Bomb Position
-            </a>
-          </UButton>
-        </UCard>
-      </div>
-    </template>
-  </UDashboardPanel>
+  <Page title="Formation">
+    <Card>
+      Bomber position:
+      <UButton
+        class="ml-4"
+        size="lg"
+      >
+        <a
+          href="/bomber-position.pdf"
+          target="_blank"
+        >
+          Bomb Position
+        </a>
+      </UButton>
+    </Card>
+  </Page>
 </template>

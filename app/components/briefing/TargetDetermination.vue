@@ -1,8 +1,13 @@
+<script setup lang="ts">
+import Card from '~/components/utils/Card.vue'
+</script>
+
 <template>
-  <UCard class="p-0">
+  <Card>
     <template #header>
       Target determination
     </template>
+
     <UButton size="lg">
       <a
         href="/target-determination.pdf"
@@ -33,8 +38,9 @@
         Shuttle Mission
       </a>
     </UButton>
-    <p class="mt-4">
+
+    <template #footer>
       Bomb Bay fuel tanks fitted if Target in Zone 8+.
-    </p>
-  </UCard>
+    </template>
+  </Card>
 </template>

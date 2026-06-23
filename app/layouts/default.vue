@@ -38,6 +38,11 @@ const links = [
         label: 'Formation',
         icon: 'i-lucide-group',
         to: '/briefing/formation'
+      },
+      {
+        label: 'Weather',
+        icon: 'i-lucide-cloud-sun',
+        to: '/briefing/weather'
       }
     ]
   },

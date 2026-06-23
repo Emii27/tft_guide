@@ -33,7 +33,10 @@ function onContextMenu() {}
           :data="data"
           @contextmenu="onContextMenu"
         />
-        <div class="px-4 py-3 border-t border-accented">
+        <div
+          v-if="$slots.tableFooter"
+          class="px-4 py-3 border-t border-accented"
+        >
           <slot name="tableFooter" />
         </div>
       </div>

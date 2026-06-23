@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import Card from '~/components/utils/Card.vue'
 </script>
 
 <template>
-  <UCard class="p-0">
+  <Card>
     Bomb Load:
     <UButton
       class="ml-4"
@@ -15,5 +16,5 @@
         Bomb Load
       </a>
     </UButton>
-  </UCard>
+  </Card>
 </template>

@@ -69,11 +69,6 @@ const links = [
     type: 'trigger',
     children: [
       {
-        label: 'Weather',
-        icon: 'i-lucide-cloud-sun',
-        to: '/zone/weather'
-      },
-      {
         label: 'Recall',
         icon: 'i-lucide-refresh-ccw',
         to: '/zone/recall'

@@ -2,7 +2,6 @@
 import Takeoff from '~/components/mission-start/Takeoff.vue'
 import RoughTakeoff from '~/components/mission-start/RoughTakeoff.vue'
 import CrashTakeoff from '~/components/mission-start/CrashTakeoff.vue'
-import WeatherOverBase from '~/components/mission-start/WeatherOverBase.vue'
 </script>
 
 <template>
@@ -13,7 +12,6 @@ import WeatherOverBase from '~/components/mission-start/WeatherOverBase.vue'
 
     <template #body>
       <div class="body-card">
-        <WeatherOverBase />
         <Takeoff />
         <RoughTakeoff />
         <CrashTakeoff />

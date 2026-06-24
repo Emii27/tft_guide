@@ -44,7 +44,6 @@ function onContextMenu() {}
       <UCard
         v-if="$slots.tableAside"
         variant="soft"
-        class="px-4"
       >
         <slot name="tableAside" />
       </UCard>

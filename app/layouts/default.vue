@@ -60,6 +60,11 @@ const links = [
         label: 'Form-up',
         icon: 'i-game-icons-join',
         to: '/start/form-up'
+      },
+      {
+        label: 'Cover & Resistance',
+        icon: 'i-game-icons-gunshot',
+        to: '/start/cover'
       }
     ]
   },
@@ -77,11 +82,6 @@ const links = [
         label: 'In zone actions',
         icon: 'i-lucide-list-checks',
         to: '/zone/action'
-      },
-      {
-        label: 'Fighter cover',
-        icon: 'i-game-icons-gunshot',
-        to: '/zone/cover'
       }
     ]
   },
@@ -91,10 +91,6 @@ const links = [
     defaultOpen: false,
     type: 'trigger',
     children: [
-      {
-        label: 'Resistance',
-        to: '/resistance'
-      },
       {
         label: 'Defensive Fire',
         to: '/combat/defensive-fire'

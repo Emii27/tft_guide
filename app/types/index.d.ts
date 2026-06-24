@@ -4,8 +4,8 @@ import type {
   type EnemyAltitude,
   type EnemyType,
   type EnemyDirection,
-  type EnemyExperience
-
+  type EnemyExperience,
+  type GermanFighterResistance
 } from '~/types/enum'
 
 export interface FormationType {
@@ -50,6 +50,17 @@ export interface FighterCoverResult {
   fair: string
   poor: string
   none: string
+}
+
+export interface FighterResistance {
+  periodStart: Date
+  periodEnd: Date
+  results: FighterResistanceResult[]
+}
+
+export interface FighterResistanceResult {
+  roll: string
+  effect: GermanFighterResistance
 }
 
 export interface EnemyExperienceAttributionTable {

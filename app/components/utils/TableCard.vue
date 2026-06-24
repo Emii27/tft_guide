@@ -5,7 +5,7 @@ import Card from '~/components/utils/Card.vue'
 
 defineProps<{
   title: TableCardHeader
-  data: unknown[]
+  data: unknown[] | unknown | undefined
   columns?: TableColumn<unknown>[]
 }>()
 function onContextMenu() {}

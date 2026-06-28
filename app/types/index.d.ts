@@ -1,11 +1,12 @@
-import type {
-  FrostbiteArea,
+import type { FighterCoverType,
+  type FrostbiteArea,
   type WoundArea,
   type EnemyAltitude,
   type EnemyType,
   type EnemyDirection,
   type EnemyExperience,
   type GermanFighterResistance
+
 } from '~/types/enum'
 
 export interface FormationType {
@@ -61,6 +62,16 @@ export interface FighterResistance {
 export interface FighterResistanceResult {
   roll: string
   effect: GermanFighterResistance
+}
+
+export interface FighterDrivenOff {
+  cover: FighterCoverType
+  results: FighterDrivenOffResult[]
+}
+
+export interface FighterDrivenOffResult {
+  roll: string
+  effect: string
 }
 
 export interface EnemyExperienceAttributionTable {

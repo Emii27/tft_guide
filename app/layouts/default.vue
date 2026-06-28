@@ -92,6 +92,10 @@ const links = [
     type: 'trigger',
     children: [
       {
+        label: 'Waves',
+        to: '/combat/waves'
+      },
+      {
         label: 'Defensive Fire',
         to: '/combat/defensive-fire'
       },

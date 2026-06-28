@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { EnemyExperience, EnemyType } from '~/types/enum'
+import Card from '~/components/utils/Card.vue'
 
 const enemyType = useState('enemyType')
 const enemyExperience = useState('enemyExperience')
@@ -31,7 +32,19 @@ const fboaEffect = computed(() => {
 </script>
 
 <template>
-  <UCard class="p-0">
+  <Card>
+    <template #header>
+      (5-7) Hit damage against german fighter ; <i>2D6</i>
+    </template>
+    <div class="flex justify-center">
+      <NuxtImg
+        src="/defensive-fire-results-table.png"
+        width="964"
+        height="850"
+      />
+    </div>
+  </Card>
+  <UCard class="p-0 hidden">
     <template #header>
       (5-7) Hit damage against german fighter {{ enemyType }} ; <i>2D6</i>
     </template>

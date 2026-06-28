@@ -7,7 +7,13 @@ defineProps<{
 <template>
   <UDashboardPanel>
     <template #header>
-      <UDashboardNavbar :title="title" />
+      <UDashboardNavbar :title="title">
+        <template #trailing>
+          <slot name="headerTrailing" />
+        </template>
+      </UDashboardNavbar>
+
+      <slot name="header" />
     </template>
 
     <template #body>
